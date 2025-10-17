@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Profile Card - Molokwu Chibuzor</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+</head>
+<body>
+ <article class="profile-card" data-testid="test-profile-card">
+  <div class="profile-main">
+    <figure class="avatar">
+      <img
+        src="jaypic.jpg"
+        alt="Profile photo of Molokwu Chibuzor"
+        data-testid="test-user-avatar"
+      />
+    </figure>
+
+    <div class="info">
+      <header>
+        <h2 data-testid="test-user-name">Molokwu Chibuzor</h2>
+        <p data-testid="test-user-bio">
+        Passionate about data analysis and technology. I love exploring how numbers tell stories, and I'm currently learning frontend development to bring insights to life visually. Lazy hard-worker ✨
+        </p>
+    </header>
+
+      <p class="time">
+        Current Time (ms): <span data-testid="test-user-time" id="time"></span>
+      </p>
+
+      <nav aria-label="Social Links" class="socials" data-testid="test-user-social-links">
+        <ul>
+          <li><a href="https://twitter.com/jaycarlx" target="_blank" rel="noopener noreferrer" data-testid="test-user-social-twitter">Twitter</a></li>
+          <li><a href="https://www.linkedin.com/in/molokwu-chibuzor-9aa624385//" target="_blank" rel="noopener noreferrer" data-testid="test-user-social-linkedin">LinkedIn</a></li>
+          <li><a href="https://github.com/" target="_blank" rel="noopener noreferrer" data-testid="test-user-social-github">GitHub</a></li>
+        </ul>
+      </nav>
+    </div>
+  </div>
+
+  <div class="profile-side">
+    <section class="hobbies">
+      <h3>Hobbies</h3>
+      <ul data-testid="test-user-hobbies">
+        <li>Working out and staying active</li>
+        <li>Exploring data insights</li>
+        <li>Watching documentaries</li>
+      </ul>
+    </section>
+
+    <section class="dislikes">
+      <h3>Dislikes</h3>
+      <ul data-testid="test-user-dislikes">
+        <li>Procrastination</li>
+        <li>Cluttered layouts</li>
+        <li>Slow Wi-Fi</li>
+      </ul>
+    </section>
+  </div>
+</article>
+  <script src="script.js"></script>
+</body>
+</html>

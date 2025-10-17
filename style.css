@@ -1,0 +1,132 @@
+:root {
+  --primary-color: #3a86ff;
+  --bg-color: #d6e1f6;
+  --text-color: #333;
+  --card-bg: #fff;
+  --border-radius: 16px;
+  --shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+  --transition: all 0.3s ease;
+  font-family: 'Inter, sans-serif';
+  
+}
+
+
+body {
+  background-color: var(--bg-color);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  margin: 0;
+  padding: 20px;
+}
+
+.profile-card {
+  background: var(--card-bg);
+  box-shadow: var(--shadow);
+  border-radius: var(--border-radius);
+  max-width: 900px;
+  width: 100%;
+  padding: 2rem;
+  transition: var(--transition);
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.profile-card:hover {
+  transform: translateY(-5px);
+}
+
+/* Inner layout */
+.profile-main {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+}
+
+.avatar img {
+  width: 130px;
+  height: 130px;
+  border-radius: 50%;
+  border: 3px solid var(--primary-color);
+  object-fit: cover;
+}
+
+.info h2 {
+  color: var(--primary-color);
+  margin-bottom: 0.4rem;
+}
+
+.info p {
+  color: var(--text-color);
+  font-size: 0.95rem;
+  line-height: 1.5;
+}
+
+.time {
+  margin: 0.8rem 0;
+  color: #555;
+  font-size: 0.9rem;
+  
+}
+
+.socials ul {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: 0.5rem auto;
+}
+
+.socials a {
+  text-decoration: none;
+  color: var(--primary-color);
+  font-weight: 600;
+  transition: var(--transition);
+  border: 2px solid var(--primary-color);
+  padding: 4px 12px;
+  border-radius: 12px;
+}
+
+.socials a:hover,
+.socials a:focus {
+  color: #fff;
+  outline: none;
+  background-color: var(--primary-color);
+}
+
+/* Side sections */
+.profile-side {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 2rem;
+}
+
+.profile-side section {
+  border: var(--primary-color) 2px solid;
+  padding-left: 1rem;
+  border-radius: 1rem 2rem;
+  
+}
+
+
+section h3 {
+  color: var(--primary-color);
+  margin-bottom: 0.5rem;
+}
+
+/* Responsivenes */
+@media (max-width: 768px) {
+  .profile-main {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .profile-side {
+    flex-direction: column;
+  }
+}
